@@ -41,10 +41,7 @@ class SignUp extends Component{
             console.error(error)
         }
     }
-    handleChange = event =>{
-        const {name, value} = event.target;
-        this.setState({[name] : value})
-    }
+    handleChange = e => this.setState()
     render(){
         const {displayName, email, password, confirmPassword} = this.state;
         return(

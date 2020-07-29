@@ -33,17 +33,13 @@ class SignUp extends Component{
             await createUserProfileDocument(user, {displayName});
             this.setState({
                 displayName : '',
-                email : '',
-                password : '',
-                confirmPassword : ''
+            email : '',
+            password : '',
+            confirmPassword : ''
             })
         }catch(error){
             console.error(error)
         }
-    }
-    handleChange = event =>{
-        const {name, value} = event.target;
-        this.setState({[name] : value})
     }
     render(){
         const {displayName, email, password, confirmPassword} = this.state;

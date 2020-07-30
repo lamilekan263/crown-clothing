@@ -88,7 +88,7 @@ class SignUp extends Component{
                         name = 'password'
                         value = {confirmPassword}
                         onChange = {this.handleChange}
-                        label= 'confirm password'
+                        label= 'Display Name'
                         required
                     >
 

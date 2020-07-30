@@ -4,7 +4,7 @@ import HomePage from './pages/homepage/homepage.component'
 import Header from './components/header/header.component'
 import SignInAndSignUpPage from './pages/signin-and-signup/signin-and-signup.component'
 import ShopPage from './pages/shop/shop.component'
-import {auth, createUserProfileDocument} from './firebase/firebase.util'
+import {auth, creeateUserProfileDocument} from './firebase/firebase.util'
 import './App.css';
 
 class App extends React.Component {

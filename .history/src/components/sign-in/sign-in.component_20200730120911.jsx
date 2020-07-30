@@ -20,13 +20,9 @@ class SignIn extends Component{
         const {email, password} = this.state;
 
         try{
-            await auth.signInWithEmailAndPassword(email, password);
-            this.setState({
-                email : '',
-                password : ''
-            })
+            await auth.signInWithEmailAndPassword(email, password)
         }catch(error){
-            console.error(error)
+
         }
       
     }
@@ -44,7 +40,7 @@ class SignIn extends Component{
                 <form onSubmit={this.handleSubmit}>
                     <FormInput name='email' type='email' handleChange={this.handleChange} label = "email" value={this.state.email}  required/>
                
-                    <FormInput name='password' type='password' handleChange={this.handleChange} label = "password" value={this.state.password} required/>
+                    <FormInput name='password' type='number' handleChange={this.handleChange} label = "password" value={this.state.password} required/>
                      <div className="buttons">
                         <CustomButton type='submit' > Sign In</CustomButton>
                         <CustomButton onClick={signInWithGoogle} isGoogleSignIn > 

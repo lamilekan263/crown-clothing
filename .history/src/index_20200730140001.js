@@ -10,11 +10,11 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider>
-     <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </Provider>
+    
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
